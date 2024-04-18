@@ -18,6 +18,10 @@ html{
     font-size: 16px;
     color: var(--lightColor);
 }
+::selection{
+    background-color: var(--primaryColor);
+    color: var(--lightColor);
+}
 h1{
     color: var(--primaryColor);
     font-size: 2.5rem;
@@ -48,7 +52,21 @@ span{
     color: var(--primaryColor);
 }
 
+/*---------------------------------------------------------------
+*------------------------ dark-mood SECTION
+---------------------------------------------------------------*/
+#sun{
+    width: 25px;
+    cursor: pointer;
+}
 
+.dark-theme {
+    --primaryColor: #ff274b;
+    --secondaryColor: #0e0d0e;
+    --lightColor: #0c0c0c;
+    --bgColor-1: #fdfafa;
+    --bgColor-2: #f3fafc;
+}
 
 
 /*---------------------------------------------------------------

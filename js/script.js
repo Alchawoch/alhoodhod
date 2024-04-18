@@ -20,3 +20,13 @@ window.onscroll = () => {
 menu.classList.remove("is-active");
 actions.classList.remove("is-active");
 }
+
+const sun = document.getElementById("sun");
+sun.onclick = function() {
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+        sun.src = "img/moon.png";
+    }else{
+        sun.src = "img/sun.png";
+    }
+}
