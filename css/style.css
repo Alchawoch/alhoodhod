@@ -68,11 +68,39 @@ span{
     --bgColor-2: #f3fafc;
 }
 
+/*---------------------------------------------------------------
+*------------------------ scroll-top SECTION
+---------------------------------------------------------------*/
+
+.GoToTopButton{
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 99;
+    background-color: var(--primaryColor);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.GoToTopButton:hover i{
+    transform: translateY(3px);
+}
+.GoToTopButton:active{
+    transform: translateY(6px);
+}
+.GoToTopButton i{
+    color: white;
+    font-size: 20px;
+    transition: 0.2s;
+}
 
 /*---------------------------------------------------------------
 *------------------------ HOME SECTION
 ---------------------------------------------------------------*/
-
 
 header nav{
     position: fixed;
@@ -467,6 +495,14 @@ h3{
     height: 2rem;
     font-size: 18px;
 }
+.GoToTopButton{
+    width: 30px;
+    height: 30px;
+}
+.GoToTopButton i{
+    width: 17px;
+    height: 17px;
+}
 .about{
     flex-direction: column;
     text-align: center;
@@ -600,6 +636,14 @@ footer p .end{
         height: 2rem;
         font-size: 18px;
     }
+    .GoToTopButton{
+        width: 33px;
+        height: 33px;
+    }
+    .GoToTopButton i{
+        width: 18px;
+        height: 18px;
+    }
     .about{
         flex-direction: column;
         text-align: center;
@@ -696,6 +740,14 @@ h3{
     width: 2.2rem;
     height: 2.2rem;
     font-size: 20px;
+}
+.GoToTopButton{
+    width: 35px;
+    height: 35px;
+}
+.GoToTopButton i{
+    width: 19px;
+    height: 19px;
 }
 .about{
     flex-direction: column;
