@@ -25,7 +25,7 @@ const sun = document.getElementById("sun");
 sun.onclick = function() {
     document.body.classList.toggle("dark-theme");
     if(document.body.classList.contains("dark-theme")){
-        sun.src = "img/moon.png";
+        sun.src = "img/moon.webp";
     }else{
         sun.src = "img/sun.png";
     }
